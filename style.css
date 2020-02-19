@@ -1,3 +1,5 @@
+/*TODO add text-overflow*/
+
 * {
   margin: 0;
 }
@@ -31,14 +33,13 @@ a {
   align-items: center;
 }
 
-.wrapper > a > h1 {
+.logo > h1 {
   padding-bottom: 2px;
-  padding-left: 1px;
   font-size: 25px;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.5px;
 }
 
-.wrapper > a > h1::after {
+.logo > h1::after {
   content: '*';
   color: #f06c64;
 }
@@ -49,8 +50,8 @@ a {
 }
 
 .navigation {
-  align-items: center;
   margin: 0px;
+  align-items: center;
   font-size: 12px;
   font-weight: 700;
 }
@@ -86,6 +87,39 @@ a {
   border-bottom: 6px solid #ea676b;
 }
 
+.slider__items {
+  display: flex;
+  height: 100%;
+}
+
+.slider__content {
+  position: relative;
+  flex-grow: 10;
+}
+
+.slider__arrow {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 281px;
+  width: 16px;
+  height: 27px;
+}
+
+.arrow_left {
+  background: url(./assets/images/chev\ 2.svg)
+}
+
+.arrow_right {
+  right: 0px;
+  background: url(./assets/images/chev.svg)
+}
+
+
 .services {
   height: 494px;
   background-color: #f2f2f2;
@@ -112,7 +146,7 @@ a {
   color: #767e9e;
 }
 
-.services__content > .services__list {
+.services__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
@@ -129,28 +163,25 @@ a {
   grid-column-gap: 18px;
 }
 
-.service > .service__icon {
-  grid-area: i;
-}
-
-.service > .service__content {
+.service__content {
   grid-area: c;
 }
 
 .service__icon {
   position: relative;
   top: 3px;
+  grid-area: i;
   height: 61px;
   width: 62px;
   background: url(./assets/images/Ellipse\ 3.svg);
 }
 
-.service__icon > .ico {
-  position: relative;
+.ico {
+  position: absolute;
   z-index: 10;
 }
 
-.service__icon > .ico_pen {
+.ico_pen {
   top: 14px;
   left: 14px;
   height: 35px;
@@ -158,7 +189,7 @@ a {
   background: url(./assets/images/pen.svg);
 }
 
-.service__icon > .ico_bulb {
+.ico_bulb {
   top: 13px;
   left: 18px;
   height: 35px;
@@ -166,7 +197,7 @@ a {
   background: url(./assets/images/bulb.svg);
 }
 
-.service__icon > .ico_heart {
+.ico_heart {
   top: 15px;
   left: 13px;
   height: 32px;
@@ -174,7 +205,7 @@ a {
   background: url(./assets/images/heart.svg);
 }
 
-.service__icon > .ico_phone {
+.ico_phone {
   top: 13px;
   left: 18px;
   height: 36px;
@@ -182,7 +213,7 @@ a {
   background: url(./assets/images/phone.svg);
 }
 
-.service__icon > .ico_buble {
+.ico_buble {
   top: 16px;
   left: 14px;
   height: 31px;
@@ -190,7 +221,7 @@ a {
   background: url(./assets/images/bubble.svg);
 }
 
-.service__icon > .ico_star {
+.ico_star {
   top: 14px;
   left: 13px;
   height: 34px;
@@ -217,4 +248,8 @@ a {
 .service:nth-child(3n) > .service__content > h4 {
   margin-left: 2px;
 }
+
+.arrow_left {
+  left: 2px;
+ }
 /*--------------------------*/

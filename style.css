@@ -1,4 +1,41 @@
-/*TODO add text-overflow*/
+/*TODO add text-overflow, height для <p></p>*/
+
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'),
+       url('assets/fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('assets/fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('assets/fonts/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+       url('assets/fonts/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 * {
   margin: 0;
@@ -107,9 +144,7 @@ a {
 
 .phone.phone_right {
   transform-origin: 325px 446px;
-  -webkit-transform-origin: 325px 446px;
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
 }
 
 .phone__item {
@@ -226,7 +261,6 @@ a {
 
 .arrow_right {
   right: 0px;
-  transform: scale(-1, 1) translateX(1);
   background: url(./assets/images/chev-right.svg)
 }
 
@@ -249,11 +283,14 @@ a {
 }
 
 .services__content > p {
-  padding-bottom: 43px;
+  height: 60px;
+  margin-bottom: 43px;
   line-height: 30px;
   font-size: 18px;
+  overflow: hidden;
   font-weight: 300;
   text-align: justify;
+  text-overflow: clip;
   color: #767e9e;
 }
 
@@ -342,13 +379,16 @@ a {
 
 
 .service__content > p {
-  padding-top: 7px;
+  height: 65px;
   line-height: 22px;
   font-size: 12px;
+  overflow: hidden;
+  text-overflow: clip;
   text-align: justify;
 }
 
 .service__content > h4 {
+  margin-bottom: 7px;
   font-size: 18px;
   color: #666d89;
   font-weight: 900;

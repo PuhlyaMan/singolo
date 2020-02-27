@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="14" viewBox="0 0 8 14">
+  <defs>
+    <image width="8" height="14" id="img1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOBAMAAADgeEClAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAKlBMVEX///9mbYlmbYlmbYlmbYlmbYlmbYlmbYlmbYlmbYlmbYlmbYlmbYkAAAAvHK0HAAAADHRSTlMAMsgU7nGrcJAwpVf8y9KyAAAAAWJLR0QN9rRh9QAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+QCGRcRKofb53IAAAArSURBVAjXY2Bg1DnDwGByBkjEHCtnYOg5ycAwc83pmQxngABCgLlgCVwEAJtFGWSKxeQiAAAAAElFTkSuQmCC"></image>
+  </defs>
+  <style>
+		tspan { white-space:pre }
+  </style>
+  <g id="About Us">
+    <g id="Social Media">
+      <g id="Facebook">
+        <use id="facebook" href="#img1" transform="matrix(0.16,0,0,0.156,0,0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,362 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Lato";
+
+  src: local("Lato Light"), local("Lato-Light"),
+  url("assets/fonts/lato-v16-latin-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("assets/fonts/lato-v16-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lato";
+
+  src: local("Lato Regular"), local("Lato-Regular"),
+  url("assets/fonts/lato-v16-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("assets/fonts/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Lato";
+
+  src: local("Lato Bold"), local("Lato-Bold"),
+  url("assets/fonts/lato-v16-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("assets/fonts/lato-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Lato";
+
+  src: local("Lato Black"), local("Lato-Black"),
+  url("assets/fonts/lato-v16-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("assets/fonts/lato-v16-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 0 40px;
+}
+
+.portfolio {
+  height: 864px;
+
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio__content {
+  height: 100%;
+}
+
+.portfolio__content > h2 {
+  padding-top: 60px;
+  padding-bottom: 22px;
+
+  font-weight: 900;
+  font-size: 30px;
+  color: #666d89;
+  letter-spacing: -0.2px;
+}
+
+.portfolio__content > p {
+  height: 37px;
+
+  font-weight: 300;
+  font-size: 18px;
+  color: #767e9e;
+}
+
+.filter {
+  display: flex;
+  height: 22px;
+  padding-left: 1px;
+}
+
+.filter__button {
+  height: 100%;
+  margin-right: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  color: #767e9e;
+
+  background: inherit;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+}
+
+.filter__button:hover {
+  color: #ffffff;
+
+  border-color: #ffffff;
+  cursor: pointer;
+}
+
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 620px;
+  margin-top: 19px;
+  padding: 0;
+  overflow: hidden;
+
+  list-style-type: none;
+}
+
+.portfolio__picture {
+  width: 220px;
+  height: 187px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio__picture:nth-child(1) {
+  background: url(./assets/images/pic1.jpg);
+}
+
+.portfolio__picture:nth-child(2) {
+  /*TODO: add correct pic2.png*/
+  background: url(./assets/images/pic2.jpg);
+}
+
+.portfolio__picture:nth-child(3) {
+  background: url(./assets/images/pic3.jpg);
+}
+
+.portfolio__picture:nth-child(4) {
+  background: url(./assets/images/pic4.jpg);
+}
+
+.portfolio__picture:nth-child(5) {
+  background: url(./assets/images/pic5.jpg);
+}
+
+.portfolio__picture:nth-child(6) {
+  background: url(./assets/images/pic6.jpg);
+}
+
+.portfolio__picture:nth-child(7) {
+  background: url(./assets/images/pic7.jpg);
+}
+
+.portfolio__picture:nth-child(8) {
+  background: url(./assets/images/pic8.jpg);
+}
+
+.portfolio__picture:nth-child(9) {
+  background: url(./assets/images/pic9.jpg);
+}
+
+.portfolio__picture:nth-child(10) {
+  background: url(./assets/images/pic10.jpg);
+}
+
+.portfolio__picture:nth-child(11) {
+  background: url(./assets/images/pic11.jpg);
+}
+
+.portfolio__picture:nth-child(12) {
+  background: url(./assets/images/pic12.jpg);
+}
+
+.portfolio__picture:nth-child(4n) {
+  margin-right: 0;
+}
+
+.about-us {
+  height: 728px;
+
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about-us__content > h2 {
+  margin-bottom: 18px;
+  padding-top: 59px;
+
+  font-weight: 900;
+  font-size: 30px;
+  color: #666d89;
+  letter-spacing: -0.2px;
+}
+
+.about-us__content > p {
+  margin-bottom: 45px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.about-us__employees {
+  display: flex;
+}
+
+.employee {
+  width: 300px;
+  height: 500px;
+}
+
+.employee:nth-child(1) {
+  margin-right: 19px;
+}
+
+.employee:nth-child(2) {
+  margin-right: 21px;
+}
+
+.employee__avatar {
+  width: 100%;
+  height: 300px;
+}
+
+.employee:nth-child(1) > .employee__avatar {
+  background: url(./assets/images/AdamJensen.svg);
+}
+
+.employee:nth-child(2) > .employee__avatar {
+  background: url(./assets/images/DesmondMiles.svg);
+}
+
+.employee:nth-child(3) > .employee__avatar {
+  background: url(./assets/images/ScolaraVisari.svg);
+}
+
+.employee__name {
+  height: 22px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  overflow: hidden;
+
+  font-weight: 900;
+  font-size: 18px;
+  color: #666d89;
+  letter-spacing: -0.1px;
+}
+
+.employee__info {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.employee__contacts {
+  display: flex;
+  padding-left: 1px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+
+  border: 1px solid #666d89;
+  border-radius: 50%;
+}
+
+.contact:hover {
+  border: 1px solid #3c60f1;
+
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.contact__ico-facebook {
+  display: block;
+  width: 8px;
+  height: 14px;
+
+  background: url(./assets/images/facebook.svg);
+}
+
+.contact__ico-google {
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background: url(./assets/images/google+.svg);
+}
+
+.contact__ico-twitter {
+  display: block;
+  width: 14px;
+  height: 12px;
+
+  background: url(./assets/images/twitter.svg);
+}
+
+.contact__ico-linkedin {
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background: url(./assets/images/linkedin.svg);
+}
+
+/*Specially for PerfectPixel*/
+.filter__button:nth-child(1) {
+  letter-spacing: 0.2px;
+}
+
+.filter__button:nth-child(3) {
+  letter-spacing: -0.05px;
+}
+
+.filter__button:nth-child(4) {
+  letter-spacing: -0.3px;
+}
+
+.employee:nth-child(1) > .employee__info {
+  letter-spacing: -0.06013px;
+}
+
+.employee:nth-child(2) > .employee__info {
+  margin-left: 1px;
+}
+
+.employee:nth-child(3) > .employee__contacts {
+  padding-left: 0;
+}
+
+/*-------------------------*/

@@ -100,9 +100,11 @@ body {
   background: inherit;
   border: 1px solid #767e9e;
   border-radius: 5px;
+  outline: none;
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.filter__button:focus {
   color: #ffffff;
 
   border-color: #ffffff;

@@ -17,9 +17,9 @@
         commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
         commodo, tortor mauris condimentum nibh.</p>
       <div class="container">
-        <form action="mailto:dr.zad1994@gmail.com" method="post" class="form">
+        <form action="mailto:dr.zad1994@gmail.com" method="post" class="form" autocomplete="off">
           <input class="form__item input" type="text" name="name" placeholder="Name (Required)" required>
-          <input class="form__item input" type="text" name="email" placeholder="Email (Required)" required>
+          <input class="form__item input" type="email" name="email" placeholder="Email (Required)" required>
           <input class="form__item input" type="text" name="subject" placeholder="Subject">
           <textarea cols="30" rows="10" class="form__item textarea" name="describe"
             placeholder="Describe your project in detail..."></textarea>
@@ -41,7 +41,7 @@
               <a class="phone__link" href="tel:+035283318635">03528 331 86 35</a>
             </li>
             <li class="info-list__item mail">
-              <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image mail__ico">
+              <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image mail__ico" pattern="">
               <a class="mail__link" href="mailto:info@singolo.com">info@singolo.com</a>
             </li>
           </ul>

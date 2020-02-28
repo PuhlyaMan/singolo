@@ -185,23 +185,23 @@ body {
   margin-bottom: 6px;
 }
 
-.address__ico {
+.info-list__address-ico {
   margin-right: 13px;
   margin-left: 3px;
 }
 
-.phone__ico {
+.info-list__phone-ico {
   margin-right: 11px;
   margin-left: 1px;
 }
 
-.mail__ico {
+.info-list__mail-ico {
   margin-top: 2px;
   margin-right: 10px;
 }
 
-.phone__link,
-.mail__link {
+.info-list__phone-link,
+.info-list__mail-link {
   padding-bottom: 1px;
 
   color: #f0d8d9;

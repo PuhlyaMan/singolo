@@ -265,7 +265,7 @@ body {
   color: #767e9e;
 }
 
-.employee__contacts {
+.contacts {
   display: flex;
   padding-left: 1px;
 }
@@ -357,7 +357,7 @@ body {
   margin-left: 1px;
 }
 
-.employee:nth-child(3) > .employee__contacts {
+.employee:nth-child(3) > .contacts {
   padding-left: 0;
 }
 

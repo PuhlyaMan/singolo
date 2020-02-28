@@ -336,6 +336,10 @@ body {
   background: url(./assets/images/linkedin.svg);
 }
 
+.contact:nth-child(4) {
+  margin-right: 0px;
+}
+
 /*Specially for PerfectPixel*/
 .filter__button:nth-child(1) {
   letter-spacing: 0.2px;

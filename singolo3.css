@@ -169,7 +169,7 @@ body {
   font-size: 12px;
   line-height: 22px;
   text-align: justify;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.027px;
 }
 
 .contact-info__list {
@@ -191,6 +191,7 @@ body {
 }
 
 .info-list__phone-ico {
+  margin-top: -1px;
   margin-right: 11px;
   margin-left: 1px;
 }

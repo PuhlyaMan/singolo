@@ -92,6 +92,9 @@ body {
 .filter__button {
   height: 100%;
   margin-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
 
   font-weight: 400;
   font-size: 12px;
@@ -345,12 +348,18 @@ body {
   letter-spacing: 0.2px;
 }
 
+.filter__button:nth-child(2) {
+  letter-spacing: 0.1px;
+  padding-right: 5px;
+}
+
 .filter__button:nth-child(3) {
   letter-spacing: -0.05px;
 }
 
 .filter__button:nth-child(4) {
-  letter-spacing: -0.3px;
+  letter-spacing: -0.1px;
+  padding-right: 5px;
 }
 
 .employee:nth-child(1) > .employee__info {

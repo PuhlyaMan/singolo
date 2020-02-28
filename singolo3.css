@@ -111,6 +111,10 @@ body {
   color: #f48c8f;
 }
 
+.form__item::-ms-input-placeholder {
+  color: #f48c8f;
+}
+
 .form__item:hover,
 .form__item:focus {
   height: 36px;

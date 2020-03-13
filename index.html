@@ -10,23 +10,23 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="wrapper">
       <a href="#" class="logo">
         <h1>Singolo</h1>
       </a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li class="navigation__item"><a href="#">Home</a></li>
-          <li class="navigation__item"><a href="#">Services</a></li>
-          <li class="navigation__item"><a href="#">Portfolio</a></li>
-          <li class="navigation__item"><a href="#">About</a></li>
-          <li class="navigation__item"><a href="#">Contact</a></li>
+          <li class="navigation__item navigation__item_active"><a href="#slider">Home</a></li>
+          <li class="navigation__item"><a href="#services">Services</a></li>
+          <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="navigation__item"><a href="#about">About</a></li>
+          <li class="navigation__item"><a href="#quote">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="slider">
+  <div class="slider" id="slider">
     <div class="wrapper">
       <div class="slider__items">
         <div class="slider__arrow">
@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-  <section class="services">
+  <section class="services" id="services">
     <div class="wrapper">
       <div class="services__content">
         <h2>Our Services</h2>
@@ -137,35 +137,59 @@
       </div>
     </div>
   </section>
-  <section class="portfolio">
-    <div class="wrapper">
+  <section class="portfolio" id="portfolio">
+    <div class="wrapper portfolio__wrapper">
       <div class="portfolio__content">
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <article class="filter">
-          <button class="filter__button" autofocus>All</button>
-          <button class="filter__button">Web Design</button>
-          <button class="filter__button">Graphic Design</button>
-          <button class="filter__button">Artwork</button>
-        </article>
+        <div class="filter">
+          <button class="filter__button filter__button_active" data-type-filter="all">All</button>
+          <button class="filter__button" data-type-filter="web-design">Web Design</button>
+          <button class="filter__button" data-type-filter="graphic-design">Graphic Design</button>
+          <button class="filter__button" data-type-filter="artwork">Artwork</button>
+        </div>
         <ul class="portfolio__gallery">
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
-          <li class="portfolio__picture"></li>
+          <li class="portfolio__picture" data-type-picture="web-design">
+            <img src="./assets/images/pic1.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="artwork">
+            <img src="./assets/images/pic2.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="web-design">
+            <img src="./assets/images/pic3.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="graphic-design">
+            <img src="./assets/images/pic4.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="graphic-design">
+            <img src="./assets/images/pic5.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="web-design">
+            <img src="./assets/images/pic6.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="graphic-design">
+            <img src="./assets/images/pic7.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="graphic-design">
+            <img src="./assets/images/pic8.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="graphic-design">
+            <img src="./assets/images/pic9.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="artwork">
+            <img src="./assets/images/pic10.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="artwork">
+            <img src="./assets/images/pic11.jpg" alt="pic1" >
+          </li>
+          <li class="portfolio__picture" data-type-picture="artwork">
+            <img src="./assets/images/pic12.jpg" alt="pic1" >
+          </li>
         </ul>
       </div>
     </div>
   </section>
-  <section class="about-us">
+  <section class="about-us" id="about">
     <div class="wrapper">
       <div class="about-us__content">
         <h2>About Us</h2>
@@ -237,7 +261,7 @@
       </div>
     </div>
   </section>
-  <section class="quote">
+  <section class="quote" id="quote">
     <div class="wrapper">
       <h2 class="quote__title">Get a Quote</h2>
       <p class="quote__content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
@@ -245,19 +269,18 @@
         commodo, tortor mauris condimentum nibh.</p>
       <div class="container">
         <form action="mailto:dr.zad1994@gmail.com" method="post" class="form" autocomplete="off">
-          <input class="form__item input" type="text" name="name" placeholder="Name (Required)" required>
-          <input class="form__item input" type="email" name="email" placeholder="Email (Required)" required>
-          <input class="form__item input" type="text" name="subject" placeholder="Subject">
-          <textarea cols="30" rows="10" class="form__item textarea" name="describe"
+          <input class="form__item input" type="text" id="name" name="name" placeholder="Name (Required)" required>
+          <input class="form__item input" type="email" id="email" name="email" placeholder="Email (Required)" required>
+          <input class="form__item input" type="text" id="subject" name="subject" placeholder="Subject">
+          <textarea cols="30" rows="10" class="form__item textarea" id="describe" name="describe"
             placeholder="Describe your project in detail..."></textarea>
           <button class="form__item button-submit">Send</button>
         </form>
         <article class="contact-info">
           <h3 class="contact-info__title">Contact Information</h3>
           <p class="contact-info__content">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce
-            vitae
-            aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-            turpis, et consequat felis. </p>
+            vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
+            aliquet turpis, et consequat felis. </p>
           <ul class="contact-info__list info-list">
             <li class="info-list__item info-list__item-address">
               <img src="./assets/images/address-ico.svg" alt="Address ico" class="image info-list__address-ico">
@@ -268,7 +291,7 @@
               <a class="info-list__phone-link" href="tel:+035283318635">03528 331 86 35</a>
             </li>
             <li class="info-list__item info-list__item-mail">
-              <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image info-list__mail-ico" pattern="">
+              <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image info-list__mail-ico">
               <a class="info-list__mail-link" href="mailto:info@singolo.com">info@singolo.com</a>
             </li>
           </ul>
@@ -297,6 +320,14 @@
       </div>
     </div>
   </footer>
+  <div class="modal close">
+    <h3 class="modal__item modal-title">Письмо отправлено</h3>
+    <span class="modal__item modal-subject"></span>
+    <span class="modal__item modal-describe"></span>
+    <button class="modal__item modal-button">OK</button>
+  </div>
+  <div class="modal-overlay close"></div>
+  <script src="script.js"></script>
 </body>
 
 </html>

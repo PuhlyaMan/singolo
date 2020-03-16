@@ -1,0 +1,61 @@
+.contacts {
+  display: flex;
+  padding-left: 1px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+
+  border: 1px solid $color-pigeon-blue;
+  border-radius: 50%;
+
+  &:hover {
+    border: 1px solid $color-blue;
+
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.contact__ico-facebook {
+  display: block;
+  width: 8px;
+  height: 14px;
+
+  background: $background-contact-ico-facebook;
+}
+
+.contact__ico-google {
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background: $background-contact-ico-google;
+}
+
+.contact__ico-twitter {
+  display: block;
+  width: 14px;
+  height: 12px;
+
+  background: $background-contact-ico-twitter;
+}
+
+.contact__ico-linkedin {
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background: $background-contact-ico-linkedin;
+}

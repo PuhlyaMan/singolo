@@ -1,0 +1,27 @@
+.about-us {
+  height: 728px;
+
+  background-color: $border-about-color;
+
+@include border($color-white);
+  scroll-margin-top: 95px;
+}
+
+.about-us__title {
+  margin-bottom: 18px;
+  padding-top: 59px;
+
+@include title();
+}
+
+.about-us__subtitle {
+  margin-bottom: 45px;
+
+  text-align: justify;
+
+@include subtitle();
+}
+
+.about-us__employees {
+  display: flex;
+}

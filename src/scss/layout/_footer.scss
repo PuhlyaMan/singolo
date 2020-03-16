@@ -1,0 +1,22 @@
+.footer {
+  height: 76px;
+
+  background-color: $background-footer;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__copyright {
+  display: block;
+  width: 787px;
+  margin-top: -1px;
+  padding-left: 2px;
+
+  font-size: 12px;
+  color: $color-pigeon-blue;
+  letter-spacing: -0.16px;
+}

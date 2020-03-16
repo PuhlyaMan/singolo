@@ -1,0 +1,22 @@
+@mixin border($color) {
+  border-bottom: 6px solid $color;
+}
+
+@mixin avatar($name) {
+  background: url('../../assets/images/#{$name}.svg');
+}
+
+@mixin title($color: $color-pigeon-blue, $f-weight: 900, $f-size: 30px, $letter-spacing: -0.2px) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin subtitle($color: $color-light-flaky-gray, $f-weight: 300, $f-size: 18px, $line-height: 30px, $text-align: justify) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $line-height;
+  text-align: $text-align;
+  color: $color;
+}

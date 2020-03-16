@@ -1,0 +1,8 @@
+* {
+  @extend %font-lato;
+}
+
+body {
+  width: $body-width;
+  margin: 0 auto;
+}

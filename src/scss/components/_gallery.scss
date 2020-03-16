@@ -1,0 +1,20 @@
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 620px;
+  margin-top: 9px;
+  padding: 0;
+  overflow: hidden;
+
+  list-style-type: none;
+}
+
+.portfolio__picture {
+  width: 220px;
+  height: 187px;
+  margin: 10px;
+}
+
+.portfolio__picture_active {
+  outline: 5px solid $color-coral;
+}

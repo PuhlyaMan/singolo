@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholder';
+@import 'abstracts/animations';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+@import 'layout/about-us';
+@import 'layout/wrapper';
+@import 'layout/header';
+@import 'layout/slider';
+@import 'layout/footer';
+@import 'layout/portfolio';
+@import 'layout/quote';
+@import 'layout/services';
+
+@import 'components/contact-info';
+@import 'components/contact';
+@import 'components/employee';
+@import 'components/filter';
+@import 'components/form';
+@import 'components/gallery';
+@import 'components/logo';
+@import 'components/modal';
+@import 'components/navigation';
+@import 'components/phones';
+@import 'components/service';
+
+@import './shame';

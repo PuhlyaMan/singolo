@@ -1,0 +1,45 @@
+.header__navigation {
+  margin-left: auto;
+  padding-top: 9px;
+}
+
+.navigation {
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.navigation__item {
+  display: inline;
+
+  a {
+    padding-left: 23px;
+
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.04px;
+
+    &:hover {
+      color: $color-coral;
+
+      cursor: pointer;
+    }
+  }
+
+  &:not(:first-child)::before {
+    content: '·';
+    position: relative;
+    right: -10px;
+
+    color: $color-grayish-black;
+  }
+}
+
+
+.navigation__item_active {
+  a {
+    color: $color-coral;
+  }
+}

@@ -1,0 +1,27 @@
+.quote {
+  height: 648px;
+
+  background-color: $color-coral;
+
+@include border($border-quote-color);
+  scroll-margin-top: 95px;
+}
+
+.quote__title {
+  padding-top: 59px;
+  padding-bottom: 18px;
+
+@include title($color: $color-almond);
+}
+
+.quote__subtitle {
+  margin-bottom: 44px;
+
+  text-align: justify;
+
+@include subtitle($color: $color-almond);
+}
+
+.container {
+  display: flex;
+}

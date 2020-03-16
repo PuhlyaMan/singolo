@@ -216,8 +216,8 @@ const setInputValueInModalWindow = () => {
   const describeValue = getInputValue('#describe');
   document.querySelector('.modal-subject').innerHTML = subjectValue ? `<b>Subject:</b> ${subjectValue}` : 'Without subject';
   document.querySelector('.modal-describe').innerHTML = describeValue
-    ? `<b>Without description:</b> ${describeValue}`
-    : 'Без описания';
+    ? `<b>Description:</b> ${describeValue}`
+    : 'Without description';
 };
 
 const getInputValue = selector => {

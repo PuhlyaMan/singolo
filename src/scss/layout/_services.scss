@@ -1,0 +1,35 @@
+.services {
+  height: 494px;
+
+  background-color: $background-services;
+
+@include border($border-slider-color);
+  scroll-margin-top: 95px;
+}
+
+
+.services__title {
+  padding-top: 59px;
+  padding-bottom: 18px;
+
+@include title();
+}
+
+.services__subtitle {
+  height: 60px;
+  margin-bottom: 43px;
+  overflow: hidden;
+
+  text-align: justify;
+  text-overflow: clip;
+
+@include subtitle();
+}
+
+.services__list {
+  display: grid;
+
+  grid-column-gap: 19px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}

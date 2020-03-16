@@ -1,0 +1,106 @@
+.service {
+  display: grid;
+  height: 93px;
+
+  grid-column-gap: 18px;
+  grid-template-areas: 'i c c c';
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.service__content {
+  grid-area: c;
+}
+
+.service__icon {
+  position: relative;
+  top: 3px;
+
+  width: 62px;
+  height: 61px;
+
+  background: $background-service-icon;
+
+  grid-area: i;
+}
+
+.ico {
+  position: absolute;
+  z-index: 10;
+}
+
+.ico_pen {
+  top: 14px;
+  left: 14px;
+
+  width: 35px;
+  height: 35px;
+
+  background: $background-service-ico-pen;
+}
+
+.ico_bulb {
+  top: 13px;
+  left: 18px;
+
+  width: 26px;
+  height: 35px;
+
+  background: $background-service-ico-bulb;
+}
+
+.ico_heart {
+  top: 15px;
+  left: 13px;
+
+  width: 36px;
+  height: 32px;
+
+  background: $background-service-ico-heart;
+}
+
+.ico_phone {
+  top: 13px;
+  left: 18px;
+
+  width: 26px;
+  height: 36px;
+
+  background: $background-service-ico-phone;
+}
+
+.ico_buble {
+  top: 16px;
+  left: 14px;
+
+  width: 35px;
+  height: 31px;
+
+  background: $background-service-ico-buble;
+}
+
+.ico_star {
+  top: 14px;
+  left: 13px;
+
+  width: 36px;
+  height: 34px;
+
+  background: $background-service-ico-star;
+}
+
+
+.service__title {
+  margin-bottom: 7px;
+
+@include title($f-size: 18px, $letter-spacing: -0.1px);
+}
+
+.service__subtitle {
+  height: 65px;
+  overflow: hidden;
+
+  text-align: justify;
+  text-overflow: clip;
+
+@include subtitle($f-weight: 400, $f-size: 12px, $line-height: 22px);
+}

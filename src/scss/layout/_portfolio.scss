@@ -1,0 +1,31 @@
+.portfolio {
+  height: 863px;
+
+  background-color: $background-portfolio;
+
+@include border($border-portfolio-color);
+  scroll-margin-top: 95px;
+}
+
+.portfolio__wrapper {
+  padding: 0 30px;
+}
+
+.portfolio__content {
+  height: 100%;
+}
+
+.portfolio__title {
+  padding-top: 59px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+
+@include title();
+}
+
+.portfolio__subtitle {
+  height: 37px;
+  padding-left: 10px;
+
+@include subtitle();
+}

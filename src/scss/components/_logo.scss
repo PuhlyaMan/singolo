@@ -1,0 +1,17 @@
+.logo {
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__title {
+  padding-bottom: 2px;
+
+@include title($color: $color-white, $f-weight: 700, $f-size: 25px, $letter-spacing: -0.5px);
+
+  &::after {
+    content: '*';
+
+    color: $color-coral;
+  }
+}

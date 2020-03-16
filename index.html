@@ -27,12 +27,12 @@
     </div>
   </header>
   <div class="slider" id="slider">
-    <div class="wrapper">
+    <div class="wrapper wrapper__slider">
+      <div class="slider__arrow slider__arrow_left">
+        <span class="arrow arrow_left"></span>
+      </div>
       <div class="slider__items">
-        <div class="slider__arrow">
-          <span class="arrow arrow_left"></span>
-        </div>
-        <div class="slider__content">
+        <div class="slider__item item_one">
           <div class="phone phone_left">
             <div class="phone__item shadow"></div>
             <div class="phone__item base"></div>
@@ -56,9 +56,12 @@
             <div class="phone__item square"></div>
           </div>
         </div>
-        <div class="slider__arrow">
-          <span class="arrow arrow_right"></span>
+        <div class="slider__item item_two">
+          <img class="item__image" src="./assets/images/slide2.png" alt="Второй слайд">
         </div>
+      </div>
+      <div class="slider__arrow slider__arrow_right">
+        <span class="arrow arrow_right"></span>
       </div>
     </div>
   </div>
@@ -150,40 +153,40 @@
         </div>
         <ul class="portfolio__gallery">
           <li class="portfolio__picture" data-type-picture="web-design">
-            <img src="./assets/images/pic1.jpg" alt="pic1" >
+            <img src="./assets/images/pic1.jpg" alt="Picture 1">
           </li>
           <li class="portfolio__picture" data-type-picture="artwork">
-            <img src="./assets/images/pic2.jpg" alt="pic1" >
+            <img src="./assets/images/pic2.jpg" alt="Picture 2">
           </li>
           <li class="portfolio__picture" data-type-picture="web-design">
-            <img src="./assets/images/pic3.jpg" alt="pic1" >
+            <img src="./assets/images/pic3.jpg" alt="Picture 3">
           </li>
           <li class="portfolio__picture" data-type-picture="graphic-design">
-            <img src="./assets/images/pic4.jpg" alt="pic1" >
+            <img src="./assets/images/pic4.jpg" alt="Picture 4">
           </li>
           <li class="portfolio__picture" data-type-picture="graphic-design">
-            <img src="./assets/images/pic5.jpg" alt="pic1" >
+            <img src="./assets/images/pic5.jpg" alt="Picture 5">
           </li>
           <li class="portfolio__picture" data-type-picture="web-design">
-            <img src="./assets/images/pic6.jpg" alt="pic1" >
+            <img src="./assets/images/pic6.jpg" alt="Picture 6">
           </li>
           <li class="portfolio__picture" data-type-picture="graphic-design">
-            <img src="./assets/images/pic7.jpg" alt="pic1" >
+            <img src="./assets/images/pic7.jpg" alt="Picture 7">
           </li>
           <li class="portfolio__picture" data-type-picture="graphic-design">
-            <img src="./assets/images/pic8.jpg" alt="pic1" >
+            <img src="./assets/images/pic8.jpg" alt="Picture 8">
           </li>
           <li class="portfolio__picture" data-type-picture="graphic-design">
-            <img src="./assets/images/pic9.jpg" alt="pic1" >
+            <img src="./assets/images/pic9.jpg" alt="Picture 9">
           </li>
           <li class="portfolio__picture" data-type-picture="artwork">
-            <img src="./assets/images/pic10.jpg" alt="pic1" >
+            <img src="./assets/images/pic10.jpg" alt="Picture 10">
           </li>
           <li class="portfolio__picture" data-type-picture="artwork">
-            <img src="./assets/images/pic11.jpg" alt="pic1" >
+            <img src="./assets/images/pic11.jpg" alt="Picture 11">
           </li>
           <li class="portfolio__picture" data-type-picture="artwork">
-            <img src="./assets/images/pic12.jpg" alt="pic1" >
+            <img src="./assets/images/pic12.jpg" alt="Picture 12">
           </li>
         </ul>
       </div>
@@ -263,39 +266,43 @@
   </section>
   <section class="quote" id="quote">
     <div class="wrapper">
-      <h2 class="quote__title">Get a Quote</h2>
-      <p class="quote__content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
-        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
-        commodo, tortor mauris condimentum nibh.</p>
-      <div class="container">
-        <form action="mailto:dr.zad1994@gmail.com" method="post" class="form" autocomplete="off">
-          <input class="form__item input" type="text" id="name" name="name" placeholder="Name (Required)" required>
-          <input class="form__item input" type="email" id="email" name="email" placeholder="Email (Required)" required>
-          <input class="form__item input" type="text" id="subject" name="subject" placeholder="Subject">
-          <textarea cols="30" rows="10" class="form__item textarea" id="describe" name="describe"
-            placeholder="Describe your project in detail..."></textarea>
-          <button class="form__item button-submit">Send</button>
-        </form>
-        <article class="contact-info">
-          <h3 class="contact-info__title">Contact Information</h3>
-          <p class="contact-info__content">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce
-            vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
-            aliquet turpis, et consequat felis. </p>
-          <ul class="contact-info__list info-list">
-            <li class="info-list__item info-list__item-address">
-              <img src="./assets/images/address-ico.svg" alt="Address ico" class="image info-list__address-ico">
-              <span>Elm St. 14/05 Lost City </span>
-            </li>
-            <li class="info-list__item info-list__item-phone">
-              <img src="./assets/images/phone-ico.svg" alt="Phone ico" class="image info-list__phone-ico">
-              <a class="info-list__phone-link" href="tel:+035283318635">03528 331 86 35</a>
-            </li>
-            <li class="info-list__item info-list__item-mail">
-              <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image info-list__mail-ico">
-              <a class="info-list__mail-link" href="mailto:info@singolo.com">info@singolo.com</a>
-            </li>
-          </ul>
-        </article>
+      <div class="quote__content">
+        <h2>Get a Quote</h2>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <div class="container">
+          <form action="mailto:dr.zad1994@gmail.com" method="post" class="form" autocomplete="off">
+            <input class="form__item input" type="text" id="name" name="name" placeholder="Name (Required)" required>
+            <input class="form__item input" type="email" id="email" name="email" placeholder="Email (Required)"
+              required>
+            <input class="form__item input" type="text" id="subject" name="subject" placeholder="Subject">
+            <textarea cols="30" rows="10" class="form__item textarea" id="describe" name="describe"
+              placeholder="Describe your project in detail..."></textarea>
+            <button class="form__item button-submit">Send</button>
+          </form>
+          <article class="contact-info">
+            <h3 class="contact-info__title">Contact Information</h3>
+            <p class="contact-info__content">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh.
+              Fusce
+              vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
+              aliquet turpis, et consequat felis. </p>
+            <ul class="contact-info__list info-list">
+              <li class="info-list__item info-list__item-address">
+                <img src="./assets/images/address-ico.svg" alt="Address ico" class="image info-list__address-ico">
+                <span>Elm St. 14/05 Lost City </span>
+              </li>
+              <li class="info-list__item info-list__item-phone">
+                <img src="./assets/images/phone-ico.svg" alt="Phone ico" class="image info-list__phone-ico">
+                <a class="info-list__phone-link" href="tel:+035283318635">03528 331 86 35</a>
+              </li>
+              <li class="info-list__item info-list__item-mail">
+                <img src="./assets/images/mail-ico.svg" alt="Mail ico" class="image info-list__mail-ico">
+                <a class="info-list__mail-link" href="mailto:info@singolo.com">info@singolo.com</a>
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -321,7 +328,7 @@
     </div>
   </footer>
   <div class="modal close">
-    <h3 class="modal__item modal-title">Письмо отправлено</h3>
+    <h3 class="modal__item modal-title">The letter was sent</h3>
     <span class="modal__item modal-subject"></span>
     <span class="modal__item modal-describe"></span>
     <button class="modal__item modal-button">OK</button>

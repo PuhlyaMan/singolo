@@ -53,6 +53,10 @@
       padding-left: 0;
     }
   }
+
+  &:nth-child(3) > .contacts {
+    padding-left: 0;
+  }
 }
 
 /*--------------------------*/

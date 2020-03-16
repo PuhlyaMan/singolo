@@ -17,10 +17,7 @@
   &:hover {
     border: 1px solid $color-blue;
 
-    animation-name: jump;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+@include animation('jump 1s linear infinite');
   }
 
   &:nth-child(4) {

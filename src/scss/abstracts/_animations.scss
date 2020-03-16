@@ -1,4 +1,4 @@
-@keyframes jump {
+@include keyframes(jump) {
   0% {
     transform: translateY(0);
   }

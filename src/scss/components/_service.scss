@@ -92,7 +92,7 @@
 .service__title {
   margin-bottom: 7px;
 
-@include title($f-size: 18px, $letter-spacing: -0.1px);
+@include title($f-size: em(18px), $letter-spacing: -0.1px);
 }
 
 .service__subtitle {
@@ -102,5 +102,5 @@
   text-align: justify;
   text-overflow: clip;
 
-@include subtitle($f-weight: 400, $f-size: 12px, $line-height: 22px);
+@include subtitle($f-weight: 400, $f-size: em(12px), $line-height: 22px);
 }

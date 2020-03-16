@@ -1,11 +1,18 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const PATHS = {
+  src: path.join(__dirname, './src'),
+  dist: path.join(__dirname, 'dist'),
+  assets: path.join(__dirname, 'assets'),
+};
 
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: PATHS.dist,
     filename: 'bundle.js',
   },
   module: {
@@ -53,6 +60,12 @@ module.exports = {
       template: './index.html',
       favicon: './favicon.ico',
     }),
+    new CopyWebpackPlugin([
+      {
+        from: `${PATHS.assets}/images`,
+        to: `${PATHS.dist}/assets/images`,
+      },
+    ]),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

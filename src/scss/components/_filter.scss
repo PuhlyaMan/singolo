@@ -13,7 +13,7 @@
   padding-left: 6px;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: em(12px);
   color: $color-light-flaky-gray;
 
   background: inherit;
@@ -21,8 +21,7 @@
   border-radius: 5px;
   outline: none;
 
-  transition-duration: 600ms;
-  transition-property: color, border-color;
+@include transition(color 600ms, border-color 600ms);
 
   &:hover {
     color: $color-white;
@@ -30,8 +29,7 @@
     border-color: $color-white;
     cursor: pointer;
 
-    transition-duration: 600ms;
-    transition-property: color, border-color;
+@include transition(color 600ms, border-color 600ms);
   }
 }
 

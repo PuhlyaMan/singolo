@@ -8,8 +8,9 @@
 }
 
 .phone.phone_right {
-  transform: rotate(90deg);
-  transform-origin: 325px 446px;
+  @include rotate(90);
+
+@include transform-origin(325px 446px);
 }
 
 .phone__item {
@@ -27,7 +28,7 @@
   .shadow {
     top: -26px;
 
-    transform: scale(-1, 1);
+@include scale(-1, 1);
   }
 }
 
@@ -92,10 +93,9 @@
 
     background: $background-phone-layer-left;
 
-    transition-duration: 200ms;
-    transition-property: opacity;
+@include transition(opacity 200ms);
 
-    clip: rect(135px, 202px, 468px, 14px);
+@include clip(135px, 202px, 468px, 14px);
   }
 }
 
@@ -108,12 +108,12 @@
     height: 580px;
 
     background: $background-phone-layer-right;
-    transform: rotate(90deg) scale(-1, -1);
 
-    transition-duration: 200ms;
-    transition-property: opacity;
+@include transform(rotate(90deg) scale(-1, -1));
 
-    clip: rect(119px, 458px, 307px, 125px);
+@include transition(opacity 200ms);
+
+@include clip(119px, 458px, 307px, 125px);
   }
 }
 
@@ -121,8 +121,7 @@
   &.layer_off {
     opacity: 0;
 
-    transition-duration: 500ms;
-    transition-property: opacity;
+@include transition(opacity 500ms);
   }
 }
 

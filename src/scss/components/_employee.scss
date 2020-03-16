@@ -37,7 +37,7 @@
   overflow: hidden;
 
   font-weight: 900;
-  font-size: 18px;
+  font-size: em(18px);
   color: $color-pigeon-blue;
   letter-spacing: -0.1px;
 }
@@ -46,7 +46,7 @@
   margin-bottom: 24px;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: em(12px);
   line-height: 21px;
   text-align: justify;
   color: $color-light-flaky-gray;

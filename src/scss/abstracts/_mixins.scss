@@ -6,17 +6,83 @@
   background: url('../../assets/images/#{$name}.svg');
 }
 
-@mixin title($color: $color-pigeon-blue, $f-weight: 900, $f-size: 30px, $letter-spacing: -0.2px) {
+@mixin title($color: $color-pigeon-blue, $f-weight: 900, $f-size: em(30px), $letter-spacing: -0.2px) {
   font-weight: $f-weight;
   font-size: $f-size;
   color: $color;
   letter-spacing: $letter-spacing;
 }
 
-@mixin subtitle($color: $color-light-flaky-gray, $f-weight: 300, $f-size: 18px, $line-height: 30px, $text-align: justify) {
+@mixin subtitle($color: $color-light-flaky-gray, $f-weight: 300, $f-size: em(18px), $line-height: 30px, $text-align: justify) {
   font-weight: $f-weight;
   font-size: $f-size;
   line-height: $line-height;
   text-align: $text-align;
   color: $color;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+     -moz-animation: #{$animation};
+      -ms-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+
+@mixin transform($transforms...) {
+  -webkit-transform: $transforms;
+     -moz-transform: $transforms;
+      -ms-transform: $transforms;
+       -o-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+     -moz-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+       -o-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin scale($x, $y) {
+  @include transform(scale($x, $y));
+}
+
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin clip($y1, $x1, $y2, $x2) {
+  clip: rect($y1, $x1, $y2, $x2,);
 }

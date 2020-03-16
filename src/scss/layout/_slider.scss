@@ -15,7 +15,7 @@
   display: flex;
   height: 594px;
 
-  transition: transform 1s linear;
+@include transition(transform 1s linear);
 }
 
 .slider__item {

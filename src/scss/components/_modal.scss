@@ -16,7 +16,8 @@
   background: linear-gradient(to top right, $color-blue, $color-dark-coral);
   border: 2px solid $color-whisper;
   border-radius: 9px;
-  transform: translate(-50%, -50%);
+
+@include translate(-50%, -50%);
 
   &::-webkit-scrollbar {
     width: 12px;
@@ -59,7 +60,7 @@
 }
 
 .modal-title {
-  font-size: 18px;
+  font-size: em(18px);
 }
 
 .modal-overlay {

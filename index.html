@@ -5,28 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
   <title>Singolo</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header" id="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrapper">
       <a href="#" class="logo">
-        <h1>Singolo</h1>
+        <h1 class="header__title">Singolo</h1>
       </a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li class="navigation__item navigation__item_active"><a href="#slider">Home</a></li>
-          <li class="navigation__item"><a href="#services">Services</a></li>
-          <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
-          <li class="navigation__item"><a href="#about">About</a></li>
-          <li class="navigation__item"><a href="#quote">Contact</a></li>
+          <li class="navigation__item navigation__item_active">
+            <a class="navigation__link navigation__link_active" href="#home">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#services">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">About</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#quote">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="slider" id="slider">
+  <div class="slider" id="home">
     <div class="wrapper wrapper__slider">
       <div class="slider__arrow slider__arrow_left">
         <span class="arrow arrow_left"></span>
@@ -57,7 +68,7 @@
           </div>
         </div>
         <div class="slider__item item_two">
-          <img class="item__image" src="./assets/images/slide2.png" alt="Второй слайд">
+          <img class="item__image" src="assets/images/slide2.png" alt="Второй слайд">
         </div>
       </div>
       <div class="slider__arrow slider__arrow_right">
@@ -68,8 +79,9 @@
   <section class="services" id="services">
     <div class="wrapper">
       <div class="services__content">
-        <h2>Our Services</h2>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+        <h2 class="services__title">Our Services</h2>
+        <p class="services__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+          non commodo luctus,
           nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
           commodo, tortor mauris condimentum nibh.</p>
         <div class="services__list">
@@ -78,8 +90,9 @@
               <div class="ico ico_pen"></div>
             </div>
             <div class="service__content">
-              <h4>Custom Design</h4>
-              <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+              <h4 class="service__title">Custom Design</h4>
+              <p class="service__subtitle">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                viverra lacus
                 ut, ultrices velit.</p>
             </div>
           </section>
@@ -88,8 +101,9 @@
               <div class="ico ico_bulb"></div>
             </div>
             <div class="service__content">
-              <h4>Inovative Ideas</h4>
-              <p>Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum
+              <h4 class="service__title">Inovative Ideas</h4>
+              <p class="service__subtitle">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus,
+                nec rutrum
                 tellus
                 dolor id lorem.</p>
             </div>
@@ -99,8 +113,9 @@
               <div class="ico ico_heart"></div>
             </div>
             <div class="service__content">
-              <h4>Love Is The Answer</h4>
-              <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+              <h4 class="service__title">Love Is The Answer</h4>
+              <p class="service__subtitle">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                consequat felis.
                 Quisque condimentum.</p>
             </div>
           </section>
@@ -109,8 +124,9 @@
               <div class="ico ico_phone"></div>
             </div>
             <div class="service__content">
-              <h4>Responsive Layout</h4>
-              <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+              <h4 class="service__title">Responsive Layout</h4>
+              <p class="service__subtitle">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc
+                ligula.
                 Prae&shy;sent
                 elit leo.</p>
             </div>
@@ -120,8 +136,8 @@
               <div class="ico ico_buble"></div>
             </div>
             <div class="service__content">
-              <h4>24 / 7 Support</h4>
-              <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+              <h4 class="service__title">24 / 7 Support</h4>
+              <p class="service__subtitle">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
                 Pellen&shy;tesque egestas venenatis lorem .</p>
             </div>
           </section>
@@ -130,8 +146,9 @@
               <div class="ico ico_star"></div>
             </div>
             <div class="service__content">
-              <h4>Feel Like A Star</h4>
-              <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+              <h4 class="service__title">Feel Like A Star</h4>
+              <p class="service__subtitle">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
+                aliquam
                 tellus.
               </p>
             </div>
@@ -143,8 +160,9 @@
   <section class="portfolio" id="portfolio">
     <div class="wrapper portfolio__wrapper">
       <div class="portfolio__content">
-        <h2>Portfolio</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <h2 class="portfolio__title">Portfolio</h2>
+        <p class="portfolio__subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+          odio sem nec elit.</p>
         <div class="filter">
           <button class="filter__button filter__button_active" data-type-filter="all">All</button>
           <button class="filter__button" data-type-filter="web-design">Web Design</button>
@@ -195,8 +213,9 @@
   <section class="about-us" id="about">
     <div class="wrapper">
       <div class="about-us__content">
-        <h2>About Us</h2>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+        <h2 class="about-us__title">About Us</h2>
+        <p class="about-us__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+          non commodo luctus, nisi
           erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
           condimentum nibh.</p>
         <div class="about-us__employees">
@@ -267,8 +286,8 @@
   <section class="quote" id="quote">
     <div class="wrapper">
       <div class="quote__content">
-        <h2>Get a Quote</h2>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+        <h2 class="quote__title">Get a Quote</h2>
+        <p class="quote__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
           commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
           commodo, tortor mauris condimentum nibh.</p>
         <div class="container">
@@ -277,13 +296,13 @@
             <input class="form__item input" type="email" id="email" name="email" placeholder="Email (Required)"
               required>
             <input class="form__item input" type="text" id="subject" name="subject" placeholder="Subject">
-            <textarea cols="30" rows="10" class="form__item textarea" id="describe" name="describe"
+            <textarea cols="30" rows="10" class="form__item input textarea" id="describe" name="describe"
               placeholder="Describe your project in detail..."></textarea>
             <button class="form__item button-submit">Send</button>
           </form>
           <article class="contact-info">
             <h3 class="contact-info__title">Contact Information</h3>
-            <p class="contact-info__content">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh.
+            <p class="contact-info__subtitle">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh.
               Fusce
               vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
               aliquet turpis, et consequat felis. </p>

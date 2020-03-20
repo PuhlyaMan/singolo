@@ -1,5 +1,5 @@
 window.onload = function() {
-  addNavigationClickHandler();
+  addScrollHandler();
   addSlideButtonClickHandler();
   addPhoneClickHandler();
   addPortfolioPictureClickHandler();
@@ -8,31 +8,37 @@ window.onload = function() {
   addModalButtonClickHandler();
 };
 
-const addNavigationClickHandler = () => {
-  document.querySelector(`.navigation`).addEventListener('click', e => {
-    if (e.target.parentNode.classList.contains('navigation__item')) {
-      const clickedNavItem = e.target.parentNode;
-      removeSelectedNavItem();
-      selectClickedMenuItem(clickedNavItem);
-      e.preventDefault();
+const addScrollHandler = () => {
+  window.addEventListener('scroll', () => {
+    const fromTop = window.scrollY + 95;
+    const docElement = document.documentElement;
+
+    document.querySelectorAll('.slider, body > section').forEach(block => {
+      if (block.offsetTop <= fromTop && block.offsetTop + block.offsetHeight > fromTop) {
+        removeSelectedNavLink();
+        document.querySelectorAll('.navigation__link').forEach(link => {
+          if (block.getAttribute('id') === link.getAttribute('href').substring(1)) {
+            selectedMenuLink(link);
+          }
+        });
+      }
+    });
+    if (docElement.clientHeight + docElement.scrollTop >= docElement.scrollHeight) {
+      removeSelectedNavLink();
+      selectedMenuLink(document.querySelector(`[href='#quote']`));
     }
   });
 };
 
-const removeSelectedNavItem = () => {
-  const navItems = document.querySelectorAll('.navigation .navigation__item');
+const removeSelectedNavLink = () => {
+  const navItems = document.querySelectorAll('.navigation .navigation__link');
   navItems.forEach(navItem => {
-    navItem.classList.remove('navigation__item_active');
+    navItem.classList.remove('navigation__link_active');
   });
 };
 
-const selectClickedMenuItem = clickedNavItem => {
-  clickedNavItem.classList.add('navigation__item_active');
-  const blockID = clickedNavItem.firstChild.getAttribute('href').substr(1);
-  document.getElementById(blockID).scrollIntoView({
-    block: 'start',
-    behavior: 'smooth',
-  });
+const selectedMenuLink = link => {
+  link.classList.add('navigation__link_active');
 };
 
 const addSlideButtonClickHandler = () => {
@@ -214,7 +220,9 @@ const validateRequareInput = () => {
 const setInputValueInModalWindow = () => {
   const subjectValue = getInputValue('#subject');
   const describeValue = getInputValue('#describe');
-  document.querySelector('.modal-subject').innerHTML = subjectValue ? `<b>Subject:</b> ${subjectValue}` : 'Without subject';
+  document.querySelector('.modal-subject').innerHTML = subjectValue
+    ? `<b>Subject:</b> ${subjectValue}`
+    : 'Without subject';
   document.querySelector('.modal-describe').innerHTML = describeValue
     ? `<b>Description:</b> ${describeValue}`
     : 'Without description';
@@ -232,5 +240,6 @@ const showHideModalWindow = () => {
 const addModalButtonClickHandler = () => {
   document.querySelector('.modal-button').addEventListener('click', e => {
     showHideModalWindow();
+    document.querySelector('.form').reset();
   });
 };

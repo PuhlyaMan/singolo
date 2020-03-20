@@ -4,7 +4,7 @@
   background-color: $color-coral;
 
 @include border($border-quote-color);
-  scroll-margin-top: 95px;
+  scroll-margin-top: $scroll-margin-top;
 }
 
 .quote__title {

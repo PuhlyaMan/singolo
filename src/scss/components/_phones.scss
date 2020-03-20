@@ -86,34 +86,31 @@
 
 .phone_left >  {
   .layer {
-    top: -70px;
+    top: 65px;
+    left: 14px;
 
-    width: 580px;
-    height: 580px;
+    width: 188px;
+    height: 333px;
 
     background: $background-phone-layer-left;
 
 @include transition(opacity 200ms);
-
-@include clip(135px, 202px, 468px, 14px);
   }
 }
 
 .phone_right {
   .layer {
-    top: -57px;
-    left: -105px;
+    top: 138px;
+    left: -59px;
 
-    width: 580px;
-    height: 580px;
+    width: 333px;
+    height: 188px;
 
     background: $background-phone-layer-right;
 
-@include transform(rotate(90deg) scale(-1, -1));
+@include rotate(270);
 
 @include transition(opacity 200ms);
-
-@include clip(119px, 458px, 307px, 125px);
   }
 }
 

@@ -10,7 +10,10 @@ $color-almond: #f0d8d9;
 $color-whisper: #ededed;
 $color-light-green: #7eed8d;
 
-$body-width: 1020px;
+$body-width-desktop: 1020px;
+$body-width-tablet: 768px;
+$body-width-mobile: 375px;
+$scroll-margin-top: 95px;
 $font-size: 16px;
 
 $background-header: #2d303a;
@@ -27,8 +30,8 @@ $background-phone-outer-circle: url('../../assets/images/outer-circle.svg');
 $background-phone-dot-red: url('../../assets/images/red-dot.svg');
 $background-phone-speaker: url('../../assets/images/speaker.svg');
 $background-phone-screen: url('../../assets/images/screen.svg');
-$background-phone-layer-left: url('../../assets/images/layer-left.svg');
-$background-phone-layer-right: url('../../assets/images/layer-right.svg');
+$background-phone-layer-left: url('../../assets/images/phone-vertical-display.svg');
+$background-phone-layer-right: url('../../assets/images/phone-horizontal-display.svg');
 $background-phone-circle: url('../../assets/images/circle.svg');
 $background-phone-square: url('../../assets/images/square.svg');
 

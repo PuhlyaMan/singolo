@@ -4,7 +4,7 @@
   background-color: $border-about-color;
 
 @include border($color-white);
-  scroll-margin-top: 95px;
+  scroll-margin-top: $scroll-margin-top;
 }
 
 .about-us__title {

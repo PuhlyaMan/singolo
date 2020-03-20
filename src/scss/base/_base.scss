@@ -2,7 +2,19 @@
   @extend %font-lato;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: $body-width;
+  width: $body-width-desktop;
   margin: 0 auto;
+
+  /*@include respond-to('desktop') {
+    width: $body-width-tablet;
+  }
+
+  @include respond-to('tablet') {
+    width: $body-width-phone;
+  }*/
 }

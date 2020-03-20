@@ -1,8 +1,9 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 500;
 
+  width: 1020px;
   height: 89px;
 
   color: $color-white;
@@ -15,4 +16,5 @@
 .header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }

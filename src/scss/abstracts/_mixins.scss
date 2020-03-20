@@ -86,3 +86,15 @@
 @mixin clip($y1, $x1, $y2, $x2) {
   clip: rect($y1, $x1, $y2, $x2,);
 }
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ 
+  @else {
+    @warn 'No value in brecpoints: #{$breakpoint}.';
+  }
+}

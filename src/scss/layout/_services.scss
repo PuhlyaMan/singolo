@@ -4,7 +4,7 @@
   background-color: $background-services;
 
 @include border($border-slider-color);
-  scroll-margin-top: 95px;
+  scroll-margin-top: $scroll-margin-top;
 }
 
 

@@ -10,7 +10,7 @@ window.onload = function() {
 
 const addScrollHandler = () => {
   window.addEventListener('scroll', () => {
-    const fromTop = window.scrollY + 95; /*Чтобы захватить блок CONTACT*/
+    const fromTop = window.scrollY + 95;
     const docElement = document.documentElement;
 
     document.querySelectorAll('.slider, body > section').forEach(block => {

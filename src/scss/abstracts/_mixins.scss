@@ -1,9 +1,23 @@
-@mixin border($color) {
-  border-bottom: 6px solid $color;
+@mixin border($color, $height: 6px) {
+  border-bottom: $height solid $color;
 }
 
 @mixin avatar($name) {
-  background: url('../../assets/images/#{$name}.svg');
+  background: url('../../assets/images/#{$name}.svg') 100% 100%;
+  background-size: 100% 100%;
+}
+
+@mixin background($background) {
+  background: $background;
+  background-size: 100% 100%;
+}
+
+@mixin position($top, $left, $width, $height) {
+  top: $top;
+  left: $left;
+
+  width: $width;
+  height: $height;  
 }
 
 @mixin title($color: $color-pigeon-blue, $f-weight: 900, $f-size: em(30px), $letter-spacing: -0.2px) {
@@ -87,14 +101,8 @@
   clip: rect($y1, $x1, $y2, $x2,);
 }
 
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+@mixin respond-to($breakpoint-min, $breakpoint-max) {
+  @media screen and (min-width: $breakpoint-min - 1px) and (max-width: $breakpoint-max - 1px) {
       @content;
-    }
-  }
- 
-  @else {
-    @warn 'No value in brecpoints: #{$breakpoint}.';
   }
 }

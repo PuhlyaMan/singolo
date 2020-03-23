@@ -6,11 +6,11 @@ body {
   width: $body-width-desktop;
   margin: 0 auto;
 
-  /*@include respond-to('desktop') {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     width: $body-width-tablet;
-  }
+  };
 
-  @include respond-to('tablet') {
-    width: $body-width-phone;
-  }*/
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    width: $body-width-mobile;
+  };
 }

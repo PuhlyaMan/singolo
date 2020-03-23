@@ -11,10 +11,14 @@
   background-color: $background-header;
 
 @include border($border-header-color);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    width: $body-width-tablet;
+  };
 }
 
 .header__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }

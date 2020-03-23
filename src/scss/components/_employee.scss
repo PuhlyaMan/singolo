@@ -3,7 +3,7 @@
   height: 500px;
 
   &:nth-child(1) {
-    margin-right: 19px;
+    margin-right: 20px;
 
     .employee__avatar {
       @include avatar('AdamJensen');
@@ -11,7 +11,7 @@
   }
 
   &:nth-child(2) {
-    margin-right: 21px;
+    margin-right: 20px;
 
     .employee__avatar {
       @include avatar('DesmondMiles');
@@ -23,11 +23,28 @@
       @include avatar('ScolaraVisari');
     }
   }
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    &:nth-child(1) {
+      margin-left: 2px;
+      margin-right: 15px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 14px;
+    }
+  };
 }
 
 .employee__avatar {
   width: 100%;
   height: 300px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    width: 219px;
+    height: 219px;
+  };
+
 }
 
 .employee__name {
@@ -40,6 +57,11 @@
   font-size: em(18px);
   color: $color-pigeon-blue;
   letter-spacing: -0.1px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-top: 11px;
+    margin-bottom: 1px;
+  };
 }
 
 .employee__info {
@@ -50,4 +72,8 @@
   line-height: 21px;
   text-align: justify;
   color: $color-light-flaky-gray;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-bottom: 12px;
+  };
 }

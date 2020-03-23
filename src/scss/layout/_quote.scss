@@ -3,7 +3,11 @@
 
   background-color: $color-coral;
 
-@include border($border-quote-color);
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    height: 625px;
+  };
+
+  @include border($border-quote-color);
   scroll-margin-top: $scroll-margin-top;
 }
 
@@ -11,15 +15,23 @@
   padding-top: 59px;
   padding-bottom: 18px;
 
-@include title($color: $color-almond);
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    padding-top: 54px;
+
+    @include title($color: $color-almond, $letter-spacing: 0.3px);
+  };
+
+  @include title($color: $color-almond);
 }
 
 .quote__subtitle {
   margin-bottom: 44px;
 
-  text-align: justify;
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-bottom: 24px;
+  };
 
-@include subtitle($color: $color-almond);
+  @include subtitle($color: $color-almond);
 }
 
 .container {

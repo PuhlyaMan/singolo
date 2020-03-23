@@ -13,10 +13,8 @@
 .footer__copyright {
   display: block;
   width: 787px;
-  margin-top: -1px;
-  padding-left: 2px;
-
-  font-size: em(12px);
+  
+  font-weight: 900;
+  font-size: em(13px);
   color: $color-pigeon-blue;
-  letter-spacing: -0.16px;
 }

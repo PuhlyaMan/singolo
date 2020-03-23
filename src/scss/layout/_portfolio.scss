@@ -1,9 +1,14 @@
 .portfolio {
-  height: 863px;
+  height: 864px;
 
   background-color: $background-portfolio;
 
 @include border($border-portfolio-color);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    height: 1094px;
+    @include border($border-portfolio-color, 8px);
+  };
   scroll-margin-top: $scroll-margin-top;
 }
 
@@ -26,6 +31,10 @@
 .portfolio__subtitle {
   height: 37px;
   padding-left: 10px;
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    height: 68px;
+  };
 
 @include subtitle();
 }

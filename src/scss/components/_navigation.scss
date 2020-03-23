@@ -1,12 +1,16 @@
 .header__navigation {
   padding-top: 9px;
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    padding-top: 3px;
+  };
 }
 
 .navigation {
-  align-items: center;
   display: flex;
-  list-style-type: none;
+  align-items: center;
 
+  list-style-type: none;
   font-weight: 700;
   font-size: em(12px);
 }
@@ -14,18 +18,18 @@
 .navigation__item:not(:first-child)::before {
   content: '·';
   position: relative;
-  right: -10px;
+  right: -15px;
 
   color: $color-grayish-black;
 }
 
 .navigation__link {
-  padding-left: 23px;
+  padding-left: 27px;
 
   color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: -0.04px;
+  letter-spacing: -0.035em;
 
   &:hover {
     color: $color-coral;

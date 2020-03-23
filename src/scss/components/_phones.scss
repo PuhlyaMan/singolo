@@ -1,16 +1,21 @@
 .phone {
   position: absolute;
-  top: 53px;
-  left: 112px;
 
-  width: 240px;
-  height: 483px;
+@include position(54px, 112px, 240px, 483px);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(40px, 85px, 181px, 364px);
+  };
 }
 
 .phone.phone_right {
   @include rotate(90);
 
-@include transform-origin(325px 446px);
+@include transform-origin(324px 447px);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include transform-origin(243px 336px);
+  }
 }
 
 .phone__item {
@@ -18,10 +23,13 @@
 }
 
 .shadow {
-  width: 240px;
-  height: 483px;
+  @include position(0, 0, 240px, 483px);
 
-  background: $background-phone-shadow;
+@include background($background-phone-shadow);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(0, 0, 181px, 364px);
+  };
 }
 
 .phone_right {
@@ -29,70 +37,77 @@
     top: -26px;
 
 @include scale(-1, 1);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+      top: -19px;
+    }
   }
 }
 
 .base {
-  top: -1px;
-  left: -2px;
+  @include position(-1px, -2px, 218px, 461px);
 
-  width: 218px;
-  height: 461px;
+@include background($background-phone-base);
 
-  background: $background-phone-base;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(-1px, -2px, 164px, 348px);
+  };
 }
 
 .outer-circle {
-  top: 15px;
-  left: 101px;
+  @include position(15px, 101px, 12px, 12px);
 
-  width: 12px;
-  height: 12px;
+@include background($background-phone-outer-circle);
 
-  background: $background-phone-outer-circle;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(12px, 76px, 9px, 9px);
+  };
 }
 
 .dot_red {
-  top: 17px;
-  left: 104px;
+  @include position(17px, 104px, 7px, 7px);
 
-  width: 7px;
-  height: 7px;
+@include background($background-phone-dot-red);
 
-  background: $background-phone-dot-red;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(13px, 78px, 6px, 6px);
+  };
 }
 
 .speaker {
-  top: 34px;
-  left: 89px;
+  @include position(34px, 89px, 39px, 9px);
 
-  width: 39px;
-  height: 9px;
+@include background($background-phone-speaker);
 
-  background: $background-phone-speaker;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(26px, 64px, 34px, 7px);
+  };
 }
 
 .screen {
-  top: 62px;
-  left: 11px;
-
-  width: 188px;
-  height: 333px;
-
-  background: $background-phone-screen;
   border: 3px solid $color-light-gray;
   border-radius: 3px;
+
+@include position(62px, 11px, 188px, 333px);
+
+@include background($background-phone-screen);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    border: 2px solid $color-light-gray;
+
+@include position(47px, 7px, 143px, 251px);
+  };
 }
 
 .phone_left >  {
   .layer {
-    top: 65px;
-    left: 14px;
+    @include position(65px, 14px, 188px, 333px);
 
-    width: 188px;
-    height: 333px;
+@include background($background-phone-layer-left);
 
-    background: $background-phone-layer-left;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+      @include position(49px, 10px, 142px, 252px);
+    };
 
 @include transition(opacity 200ms);
   }
@@ -100,13 +115,13 @@
 
 .phone_right {
   .layer {
-    top: 138px;
-    left: -59px;
+    @include position(138px, -59px, 333px, 188px);
 
-    width: 333px;
-    height: 188px;
+@include background($background-phone-layer-right);
 
-    background: $background-phone-layer-right;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+      @include position(102px, -45px, 252px, 142px);
+    };
 
 @include rotate(270);
 
@@ -123,21 +138,21 @@
 }
 
 .circle {
-  top: 406px;
-  left: 85px;
+  @include position(406px, 85px, 45px, 45px);
 
-  width: 45px;
-  height: 45px;
+@include background($background-phone-circle);
 
-  background: $background-phone-circle;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(306px, 64px, 34px, 34px);
+  };
 }
 
 .square {
-  top: 419px;
-  left: 98px;
+  @include position(419px, 98px, 19px, 19px);
 
-  width: 19px;
-  height: 19px;
+@include background($background-phone-square);
 
-  background: $background-phone-square;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include position(315px, 73px, 15px, 15px);
+  };
 }

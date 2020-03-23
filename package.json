@@ -7,7 +7,7 @@
   "author": "Sergey Kostin <dr.zad1994@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "del-cli dist && webpack",
+    "build": "del-cli dist && webpack --mode production",
     "start": "webpack --watch",
     "start:dev": "webpack-dev-server"
   },

@@ -1,7 +1,10 @@
 .form {
   display: inline-block;
-  width: 615px;
-  margin-right: 25px;
+  width: 621px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    width: 607px;
+  };
 }
 
 .form__item {
@@ -14,19 +17,32 @@
   background-color: $color-dark-coral;
   border: none;
   border-radius: 5px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-bottom: 12px;
+  };
 }
 
 .input {
-  width: calc(100% - 11px);
+  width: 100%;
   height: 38px;
-  padding-left: 15px;
 
   &::placeholder {
     color: #f48c8f;
+    padding-left: 15px;
+
+    @include respond-to($body-width-tablet, $body-width-desktop) {
+      padding-left: 9px;
+    };
   }
 
   &::-ms-input-placeholder {
     color: $color-coral;
+    padding-left: 15px;
+
+    @include respond-to($body-width-tablet, $body-width-desktop) {
+      padding-left: 9px;
+    };
   }
 
   &:hover,
@@ -40,14 +56,23 @@
 }
 
 .textarea {
-  height: 192px;
+  height: 149px;
   padding-top: 10px;
 
   resize: none;
 
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    height: 151px;
+    padding-top: 8px;
+  };
+
   &:hover,
   &:focus {
-    height: 190px;
+    height: 147px;
+
+    @include respond-to($body-width-tablet, $body-width-desktop) {
+      height: 149px;
+    };
   }
 }
 

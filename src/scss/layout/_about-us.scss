@@ -3,13 +3,23 @@
 
   background-color: $border-about-color;
 
-@include border($color-white);
+@include border($color-white, 5px);
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    height: 669px;
+
+    border: none;
+  };
   scroll-margin-top: $scroll-margin-top;
 }
 
 .about-us__title {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   padding-top: 59px;
+
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    padding-top: 52px;
+  };
 
 @include title();
 }
@@ -17,7 +27,9 @@
 .about-us__subtitle {
   margin-bottom: 45px;
 
-  text-align: justify;
+@include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-bottom: 39px;
+  };
 
 @include subtitle();
 }

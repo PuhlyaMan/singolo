@@ -1,8 +1,12 @@
 .filter {
   display: flex;
   height: 22px;
-  margin-top: 4px;
+  margin-top: 5px;
   padding-left: 11px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-top: 4px;
+  };
 }
 
 .filter__button {

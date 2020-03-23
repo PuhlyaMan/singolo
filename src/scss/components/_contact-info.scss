@@ -1,17 +1,25 @@
 .contact-info {
   width: 300px;
   height: 100%;
+  margin-left: 20px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-left: 29px;
+  };
 }
 
 .contact-info__title {
   margin-top: -2px;
   margin-bottom: 7px;
 
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-bottom: 1px;
+  };
+
 @include title($color: $color-almond, $f-size: em(18px), $letter-spacing: -0.1px);
 }
 
 .contact-info__subtitle {
-  text-align: justify;
   letter-spacing: -0.027px;
 
 @include subtitle($color: $color-almond, $f-weight: 400, $f-size: em(12px), $line-height: 22px);
@@ -23,6 +31,10 @@
 
   list-style-type: none;
   font-size: em(12px);
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    margin-top: 13px;
+  };
 }
 
 .info-list__item {
@@ -38,7 +50,6 @@
 }
 
 .info-list__phone-ico {
-  margin-top: -1px;
   margin-right: 11px;
   margin-left: 1px;
 }

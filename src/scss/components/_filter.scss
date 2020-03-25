@@ -1,12 +1,12 @@
 .filter {
   display: flex;
   height: 22px;
-  margin-top: 5px;
+  padding-top: 5px;
   padding-left: 11px;
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
-    margin-top: 4px;
-  };
+    padding-top: 4px;
+  }
 }
 
 .filter__button {
@@ -25,7 +25,7 @@
   border-radius: 5px;
   outline: none;
 
-@include transition(color 600ms, border-color 600ms);
+  @include transition(color 600ms, border-color 600ms);
 
   &:hover {
     color: $color-white;
@@ -33,7 +33,7 @@
     border-color: $color-white;
     cursor: pointer;
 
-@include transition(color 600ms, border-color 600ms);
+    @include transition(color 600ms, border-color 600ms);
   }
 }
 

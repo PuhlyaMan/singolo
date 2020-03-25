@@ -125,7 +125,7 @@ const actionForLayout = clickedPhoneItem => {
 const addPortfolioPictureClickHandler = () => {
   document.querySelector('.portfolio__gallery').addEventListener('click', e => {
     if (e.target.parentNode.classList.contains('portfolio__picture')) {
-      const clickPortfolioPicture = e.target.parentNode;
+      const clickPortfolioPicture = e.target;
       const currentSelectedPortfolioPicture = document.querySelector('.portfolio__picture_active');
       removeSelectePortfolioPicture();
       if (clickPortfolioPicture !== currentSelectedPortfolioPicture)
@@ -137,7 +137,7 @@ const addPortfolioPictureClickHandler = () => {
 const removeSelectePortfolioPicture = () => {
   const portfolioPictures = document.querySelectorAll('.portfolio__picture');
   portfolioPictures.forEach(picture => {
-    picture.classList.remove('portfolio__picture_active');
+    picture.children[0].classList.remove('portfolio__picture_active');
   });
 };
 

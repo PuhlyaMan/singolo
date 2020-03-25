@@ -7,7 +7,7 @@
 .header__title {
   padding-bottom: 2px;
 
-@include title($color: $color-white, $f-weight: 700, $f-size: em(25px), $letter-spacing: -0.5px);
+  @include title($color: $color-white, $f-weight: 700, $f-size: em(25px), $letter-spacing: -0.5px);
 
   &::after {
     content: '*';

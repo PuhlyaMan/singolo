@@ -3,14 +3,6 @@ html {
 }
 
 body {
-  width: $body-width-desktop;
+  max-width: $body-width-desktop;
   margin: 0 auto;
-
-  @include respond-to($body-width-tablet, $body-width-desktop) {
-    width: $body-width-tablet;
-  };
-
-  @include respond-to($body-width-mobile, $body-width-tablet) {
-    width: $body-width-mobile;
-  };
 }

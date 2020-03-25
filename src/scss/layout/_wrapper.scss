@@ -1,4 +1,8 @@
 .wrapper {
   height: 100%;
   padding: 0 40px;
+
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    padding: 0 32px;
+  }
 }

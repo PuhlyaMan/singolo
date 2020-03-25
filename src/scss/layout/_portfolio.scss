@@ -1,14 +1,16 @@
 .portfolio {
-  height: 864px;
-
   background-color: $background-portfolio;
 
-@include border($border-portfolio-color);
+  @include border($border-portfolio-color);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
-    height: 1094px;
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include border($border-portfolio-color, 8px);
-  };
+  }
+
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    border: none;
+  }
+
   scroll-margin-top: $scroll-margin-top;
 }
 
@@ -16,25 +18,31 @@
   padding: 0 30px;
 }
 
-.portfolio__content {
-  height: 100%;
-}
-
 .portfolio__title {
   padding-top: 59px;
   padding-bottom: 18px;
   padding-left: 10px;
 
-@include title();
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    padding-top: 42px;
+    padding-left: 0;
+  }
+
+  @include title();
 }
 
 .portfolio__subtitle {
   height: 37px;
   padding-left: 10px;
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     height: 68px;
-  };
+  }
 
-@include subtitle();
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    height: 101px;
+    padding-left: 0;
+  }
+
+  @include subtitle();
 }

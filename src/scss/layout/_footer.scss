@@ -1,5 +1,5 @@
 .footer {
-  height: 76px;
+  padding: 22px 0;
 
   background-color: $background-footer;
 }
@@ -13,7 +13,7 @@
 .footer__copyright {
   display: block;
   width: 787px;
-  
+
   font-weight: 900;
   font-size: em(13px);
   color: $color-pigeon-blue;

@@ -4,7 +4,7 @@
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
     width: 607px;
-  };
+  }
 }
 
 .form__item {
@@ -20,29 +20,25 @@
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
     margin-bottom: 12px;
-  };
+  }
 }
 
 .input {
-  width: 100%;
+  width: calc(100% - 15px);
   height: 38px;
+  padding-left: 15px;
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    width: calc(100% - 9px);
+    padding-left: 9px;
+  }
 
   &::placeholder {
     color: #f48c8f;
-    padding-left: 15px;
-
-    @include respond-to($body-width-tablet, $body-width-desktop) {
-      padding-left: 9px;
-    };
   }
 
   &::-ms-input-placeholder {
     color: $color-coral;
-    padding-left: 15px;
-
-    @include respond-to($body-width-tablet, $body-width-desktop) {
-      padding-left: 9px;
-    };
   }
 
   &:hover,
@@ -64,7 +60,7 @@
   @include respond-to($body-width-tablet, $body-width-desktop) {
     height: 151px;
     padding-top: 8px;
-  };
+  }
 
   &:hover,
   &:focus {
@@ -72,7 +68,7 @@
 
     @include respond-to($body-width-tablet, $body-width-desktop) {
       height: 149px;
-    };
+    }
   }
 }
 

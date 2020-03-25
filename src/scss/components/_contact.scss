@@ -16,7 +16,7 @@
   &:hover {
     border: 1px solid $color-blue;
 
-@include animation('jump 1s linear infinite');
+    @include animation('jump 1s linear infinite');
   }
 
   &:nth-child(4) {

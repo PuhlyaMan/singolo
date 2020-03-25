@@ -1,39 +1,46 @@
 .about-us {
-  height: 728px;
-
   background-color: $border-about-color;
 
-@include border($color-white, 5px);
+  @include border($color-white, 5px);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
-    height: 669px;
-
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     border: none;
-  };
+  }
+
   scroll-margin-top: $scroll-margin-top;
 }
 
 .about-us__title {
-  margin-bottom: 17px;
   padding-top: 59px;
+  padding-bottom: 17px;
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     padding-top: 52px;
-  };
+  }
 
-@include title();
+  @include title();
 }
 
 .about-us__subtitle {
-  margin-bottom: 45px;
+  padding-bottom: 46px;
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
-    margin-bottom: 39px;
-  };
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    padding-bottom: 39px;
+  }
 
-@include subtitle();
+  @include subtitle();
 }
 
 .about-us__employees {
-  display: flex;
+  display: grid;
+  padding-bottom: 68px;
+
+  grid-column-gap: 21px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond-to($body-width-tablet, $body-width-desktop) {
+    padding-bottom: 75px;
+
+    grid-column-gap: 16px;
+  }
 }

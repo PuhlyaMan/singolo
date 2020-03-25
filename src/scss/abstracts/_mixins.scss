@@ -2,11 +2,6 @@
   border-bottom: $height solid $color;
 }
 
-@mixin avatar($name) {
-  background: url('../../assets/images/#{$name}.svg') 100% 100%;
-  background-size: 100% 100%;
-}
-
 @mixin background($background) {
   background: $background;
   background-size: 100% 100%;
@@ -17,7 +12,7 @@
   left: $left;
 
   width: $width;
-  height: $height;  
+  height: $height;
 }
 
 @mixin title($color: $color-pigeon-blue, $f-weight: 900, $f-size: em(30px), $letter-spacing: -0.2px) {
@@ -39,15 +34,19 @@
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
+
   @-moz-keyframes #{$animation-name} {
     @content;
   }
+
   @-ms-keyframes #{$animation-name} {
     @content;
   }
+
   @-o-keyframes #{$animation-name} {
     @content;
   }
+
   @keyframes #{$animation-name} {
     @content;
   }
@@ -98,11 +97,11 @@
 }
 
 @mixin clip($y1, $x1, $y2, $x2) {
-  clip: rect($y1, $x1, $y2, $x2,);
+  clip: rect($y1, $x1, $y2, $x2, );
 }
 
 @mixin respond-to($breakpoint-min, $breakpoint-max) {
   @media screen and (min-width: $breakpoint-min - 1px) and (max-width: $breakpoint-max - 1px) {
-      @content;
+    @content;
   }
 }

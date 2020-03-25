@@ -1,14 +1,15 @@
 .services {
-  height: 494px;
-
   background-color: $background-services;
 
-@include border($border-slider-color);
+  @include border($border-slider-color);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
-    height: 675px;
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     border: none;
-  };
+  }
+
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    border: none;
+  }
 
   scroll-margin-top: $scroll-margin-top;
 }
@@ -20,35 +21,52 @@
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
     padding-top: 40px;
-  };
+  }
 
-@include title();
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    padding-top: 26px;
+  }
+
+  @include title();
 }
 
 .services__subtitle {
   height: 60px;
-  margin-bottom: 43px;
+  padding-bottom: 43px;
   overflow: hidden;
 
   text-overflow: clip;
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
     height: 99px;
-    margin-bottom: 25px;
-  };
+    padding-bottom: 25px;
+  }
 
-@include subtitle();
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    height: 214px;
+    padding-bottom: 21px;
+  }
+
+  @include subtitle();
 }
 
 .services__list {
   display: grid;
+  padding-bottom: 60px;
 
   grid-column-gap: 19px;
   grid-row-gap: 32px;
   grid-template-columns: repeat(3, 1fr);
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
-    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 76px;
+
     grid-row-gap: 51px;
-  };
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    grid-row-gap: 26px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

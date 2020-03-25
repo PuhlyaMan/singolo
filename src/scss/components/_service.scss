@@ -1,7 +1,7 @@
 .service {
   display: grid;
-  height: 93px;
   width: 300px;
+  height: 93px;
 
   grid-column-gap: 18px;
   grid-template-areas: 'i c c c';
@@ -91,15 +91,15 @@
 
 
 .service__title {
-  margin-top: 2px;
-  margin-bottom: 8px;
+  padding-top: 2px;
+  padding-bottom: 8px;
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
-    margin-top: 1px;
-    margin-left: 1px;
-  };
+    padding-top: 1px;
+    padding-left: 1px;
+  }
 
-@include title($f-size: em(18px), $letter-spacing: 0px);
+  @include title($f-size: em(18px), $letter-spacing: 0);
 }
 
 .service__subtitle {
@@ -109,5 +109,5 @@
   text-align: justify;
   text-overflow: clip;
 
-@include subtitle($f-weight: 400, $f-size: em(12px), $line-height: 22px);
+  @include subtitle($f-weight: 400, $f-size: em(12px), $line-height: 22px);
 }

@@ -5,7 +5,7 @@
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
     height: 625px;
-  };
+  }
 
   @include border($border-quote-color);
   scroll-margin-top: $scroll-margin-top;
@@ -19,17 +19,17 @@
     padding-top: 54px;
 
     @include title($color: $color-almond, $letter-spacing: 0.3px);
-  };
+  }
 
   @include title($color: $color-almond);
 }
 
 .quote__subtitle {
-  margin-bottom: 44px;
+  padding-bottom: 44px;
 
   @include respond-to($body-width-tablet, $body-width-desktop) {
-    margin-bottom: 24px;
-  };
+    padding-bottom: 24px;
+  }
 
   @include subtitle($color: $color-almond);
 }

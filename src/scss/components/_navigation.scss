@@ -1,9 +1,9 @@
 .header__navigation {
   padding-top: 9px;
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     padding-top: 3px;
-  };
+  }
 }
 
 .navigation {

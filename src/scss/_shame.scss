@@ -1,3 +1,27 @@
-.footer__content > .contacts {
-  margin-right: 2px;
+.footer__content>.contacts {
+  padding-right: 2px;
+}
+
+.service-heart>.service__icon {
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    top: 4px;
+  }
+}
+
+.service-phone>.service__icon {
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    top: 5px;
+  }
+}
+
+.service-buble>.service__icon {
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    top: 6px;
+  }
+}
+
+.service-star>.service__icon {
+  @include respond-to($body-width-mobile, $body-width-tablet) {
+    top: 7px;
+  }
 }

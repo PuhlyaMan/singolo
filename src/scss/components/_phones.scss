@@ -1,19 +1,21 @@
 .phone {
   position: absolute;
 
-@include position(54px, 112px, 240px, 483px);
+  @include position(54px, 112px, 240px, 483px);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(40px, 85px, 181px, 364px);
-  };
+  }
+
+  ;
 }
 
 .phone.phone_right {
   @include rotate(90);
 
-@include transform-origin(324px 447px);
+  @include transform-origin(324px 447px);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include transform-origin(243px 336px);
   }
 }
@@ -25,20 +27,22 @@
 .shadow {
   @include position(0, 0, 240px, 483px);
 
-@include background($background-phone-shadow);
+  @include background($background-phone-shadow);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(0, 0, 181px, 364px);
-  };
+  }
+
+  ;
 }
 
 .phone_right {
   .shadow {
     top: -26px;
 
-@include scale(-1, 1);
+    @include scale(-1, 1);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include respond-to($body-width-tablet, $body-width-desktop) {
       top: -19px;
     }
   }
@@ -47,69 +51,77 @@
 .base {
   @include position(-1px, -2px, 218px, 461px);
 
-@include background($background-phone-base);
+  @include background($background-phone-base);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(-1px, -2px, 164px, 348px);
-  };
+  }
+
+  ;
 }
 
 .outer-circle {
   @include position(15px, 101px, 12px, 12px);
 
-@include background($background-phone-outer-circle);
+  @include background($background-phone-outer-circle);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(12px, 76px, 9px, 9px);
-  };
+  }
+
+  ;
 }
 
 .dot_red {
   @include position(17px, 104px, 7px, 7px);
 
-@include background($background-phone-dot-red);
+  @include background($background-phone-dot-red);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(13px, 78px, 6px, 6px);
-  };
+  }
+
+  ;
 }
 
 .speaker {
   @include position(34px, 89px, 39px, 9px);
 
-@include background($background-phone-speaker);
+  @include background($background-phone-speaker);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(26px, 64px, 34px, 7px);
-  };
+  }
+
+  ;
 }
 
 .screen {
   border: 3px solid $color-light-gray;
   border-radius: 3px;
 
-@include position(62px, 11px, 188px, 333px);
+  @include position(62px, 11px, 188px, 333px);
 
-@include background($background-phone-screen);
+  @include background($background-phone-screen);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     border: 2px solid $color-light-gray;
 
-@include position(47px, 7px, 143px, 251px);
-  };
+    @include position(47px, 7px, 143px, 251px);
+  }
 }
 
-.phone_left >  {
+.phone_left> {
   .layer {
     @include position(65px, 14px, 188px, 333px);
 
-@include background($background-phone-layer-left);
+    @include background($background-phone-layer-left);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include respond-to($body-width-tablet, $body-width-desktop) {
       @include position(49px, 10px, 142px, 252px);
-    };
+    }
 
-@include transition(opacity 200ms);
+    @include transition(opacity 200ms);
   }
 }
 
@@ -117,15 +129,15 @@
   .layer {
     @include position(138px, -59px, 333px, 188px);
 
-@include background($background-phone-layer-right);
+    @include background($background-phone-layer-right);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+    @include respond-to($body-width-tablet, $body-width-desktop) {
       @include position(102px, -45px, 252px, 142px);
-    };
+    }
 
-@include rotate(270);
+    @include rotate(270);
 
-@include transition(opacity 200ms);
+    @include transition(opacity 200ms);
   }
 }
 
@@ -133,26 +145,26 @@
   &.layer_off {
     opacity: 0;
 
-@include transition(opacity 500ms);
+    @include transition(opacity 500ms);
   }
 }
 
 .circle {
   @include position(406px, 85px, 45px, 45px);
 
-@include background($background-phone-circle);
+  @include background($background-phone-circle);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(306px, 64px, 34px, 34px);
-  };
+  }
 }
 
 .square {
   @include position(419px, 98px, 19px, 19px);
 
-@include background($background-phone-square);
+  @include background($background-phone-square);
 
-@include respond-to($body-width-tablet, $body-width-desktop) {
+  @include respond-to($body-width-tablet, $body-width-desktop) {
     @include position(315px, 73px, 15px, 15px);
-  };
+  }
 }
